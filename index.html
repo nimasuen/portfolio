@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+   <!--google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <!-- resets browser defaults -->
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css">-->
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/58b3551564.js" crossorigin="anonymous"></script>	
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fas fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Nosadeba Imasuen</h1>
+            </div>
+        </div>
+    </div>
+<!-- about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_3019.png" alt="image">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>My name is Nosadeba Imasuen, a passionate and adaptable undergraduate who is pursuing a career in Data Science. 
+                    My academic foundation in informatics, paired with my pursuit of a degree in Data Science, allows me to approach unique problems with an interdisciplinary perspective. 
+                    As I continue to expand my technical skill set through my studies, I develop robust understandings of data analytics, machine learning, and statistical modeling. 
+                    I am solely driven by my passion to contribute to projects that push the boundaries of user experience and technological innovation.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML/CSS</li>
+                        <li><span>Languages</span><br>Python, PHP, SQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Informatics Bachelors of Science at IU Bloomington</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+            <div>
+                <span class="material-symbols-outlined">
+                    design_services
+                </span>
+                <h3>Web Design</h3>
+                <p>Created modern, mobile-friendly websites by solving code construction and web design issues.
+                    Applied design principles, typography and color theory to create an aesthetic and interesting website.</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    code
+                </span>
+                <h3>Data Analysis</h3>
+                <p>Implementing Python to ingest/clean data and using SQL to query the data to find insights.
+                    Analyzing a designing a Conceptual Schema to write advanced SQL queries to retrieve data from a SQL database and format the output data.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="image">
+                <div class="layer">
+                    <h4>Python Adventure Outfitters Web Development</h4>
+                    <p>Configured a Python application with integrated HTML components to enhance functionality and user interaction.
+                        Designed and implemented a semester-long project featuring many interactive buttons and intuitive navigational features.
+                        Developed a responsive front-end web interface by integrating Python with five HTML pages, while performing thorough evaluations and tests to optimize user experience.</p>
+                    <a href="https://cgi.luddy.indiana.edu/~nimasuen/i211_project/"><span class="material-symbols-outlined">link</span></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="image">
+                <div class="layer">
+                    <h4>SQL Project Information Representation</h4>
+                        <p>Conducted analysis and assessment of all clients to organize their full names and phone numbers and the specific month they attended an event, leading to successful SQL database implementation.
+                            Engineered a web-based application integrating PHP, MySQL, and HTML to optimize database functionality and user experience.</p>
+                        <a href="https://cgi.luddy.indiana.edu/~songjohn/i308/main.php"><span class="material-symbols-outlined">link</span></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="image">
+                <div class="layer">
+                <h4>Pokemon Battle Program</h4>
+                    <p>Utilized Python to parse a list of dictionaries, enabling users to receive a curated selection of ten started Pokémon.
+                        Enhanced user experience by displaying detailed attributes for starter Pokémon, including HP, power, type, and level.
+                        Actively offered ten different options for the user to choose between adding, viewing, and battling other Pokémon.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-solid fa-envelope"></i>nimasuen2@gmail.com</p>
+                <div class="social-icons">
+                    <p><a href="https://www.linkedin.com/in/nosadeba-imasuen-18840123a/"><i class="fa-brands fa-linkedin"></i></a>Nosadeba Imasuen</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1ENyAYTnWkXb1vppdLgZNDEnxdnO3ee3r/view" class="btn btn2">My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZm9szDKqr3vw5s9d8oVQuqOXgkZ3gqojl4HWrq8Koc45Nez4f_HlOJQxfur8Mfpod/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
